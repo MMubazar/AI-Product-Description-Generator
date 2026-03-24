@@ -1,0 +1,91 @@
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(120deg, #eef2f7, #d9e4f5);
+}
+
+.product-card {
+  width: 500px;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+
+  label {
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #444;
+  }
+
+  input,
+  textarea,
+  select {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    transition: 0.2s;
+
+    &:focus {
+      border-color: #4a7df3;
+      outline: none;
+      box-shadow: 0 0 5px rgba(74,125,243,0.3);
+    }
+  }
+}
+
+.generate-btn {
+  width: 100%;
+  background: #4a7df3;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    background: #355ed8;
+  }
+}
+
+.save-btn {
+  width: 100%;
+  background: #27ae60;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    background: #1e8e4d;
+  }
+}
+
+/* Optional: select dropdown hover/focus */
+select {
+  cursor: pointer;
+  background: #fff;
+  &:hover {
+    border-color: #4a7df3;
+  }
+}
