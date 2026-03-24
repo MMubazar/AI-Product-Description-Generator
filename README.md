@@ -129,13 +129,20 @@ cd backend
 npm install
 ```
 
-Create `.env` file:
+Create `.env` file (inside backend folder):
 
 ```
-OPENAI_API_KEY=your_key
-GROK_API_KEY=your_key
-AI_PROVIDER=openai
+AI_PROVIDER=grok # openai | grok
+OPENAI_API_KEY=
+GROK_API_KEY=
 ```
+
+> 🔐 Notes:
+>
+> * `AI_PROVIDER` controls which AI will run by default
+> * You can switch between `openai` and `grok`
+> * Keep API keys secret (never expose in frontend)
+> * Restart server after updating `.env`
 
 Run server:
 
@@ -184,7 +191,7 @@ http://localhost:4200
 
 ## 👨‍💻 Author
 
-**Muhammad Mubazar Qureshi**
+**Muhammad Mubazar**
 
 ---
 
